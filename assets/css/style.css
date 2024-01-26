@@ -1,18 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
 
-*{
-    padding: 0;
-    margin:0;
-    border:0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-#navbarNavAltMarkup{
-    justify-content: right;
+/* NAV */
+a.navbar-brand {
+  font-family: "Cabin";
+  font-weight: 700;
+  color: #fff;
 }
 
+#navbarNavAltMarkup a {
+  font-family: "Cabin";
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
 
+#navbarNavAltMarkup {
+  justify-content: right;
+}
 
+/* BODY */
+body {
+  /* for scrolling */
+  position: relative;
+}
 
-body { /* for scrolling */
-    position: relative;
-  }
+/* QUIENES SOMOS */
 
+#quienesSomos {
+  background-color: #000000;
+}
+
+#quienesSomos h2 {
+  color: #fff;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+  background-color: #00e1ff;
+}
+
+i#icon1.fa-solid.fa-plane.card-img-top.p-1,
+i#icon2.fa-solid.fa-mountain.card-img-top.p-1,
+i#icon3.fa-solid.fa-route.card-img-top.p-1 {
+  color: #fff;
+}
+
+p.card-text {
+  font-family: "Cabin";
+  font-weight: 500;
+  text-align: justify;
+}
+
+div.card-body {
+  background-color: #000000;
+  color: #fff;
+}
+
+div.card {
+  border-color: #000000;
+}
+
+/* DESTACADOS */
+div#destacados.row.gx-5.p-5.text-center {
+  background-color: #000000;
+  color: #fff;
+}
+
+p.card-text-a {
+  font-family: "Cabin";
+  font-weight: 500;
+  text-align: justify;
+}
+
+div.card-body-a {
+  background-color: #00e1ff;
+  color: #fff;
+}
+
+/* CONTACTO */
