@@ -1,5 +1,18 @@
 
+*{
+    padding: 0;
+    margin:0;
+    border:0;
+}
 
 #navbarNavAltMarkup{
     justify-content: right;
 }
+
+
+
+
+body { /* for scrolling */
+    position: relative;
+  }
+

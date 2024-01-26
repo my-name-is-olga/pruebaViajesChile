@@ -24,28 +24,36 @@
     <title>VIAJES CHILE</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
     <!-- NAV BOOTSTRAP -->
-    <nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="./assets/img/viajes.svg" style="width:2rem"/>
-                <a class="navbar-brand" href="#">Viajes Chile</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav" >
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Quienes Somos</a>
-                        <a class="nav-link" href="#">Destacados</a>
-                        <a class="nav-link" aria-disabled="true">Contacto</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid ">
+            <img src="./assets/img/viajes.svg" style="width:2rem" />
+            <a class="navbar-brand" href="#">Viajes Chile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#carouselExample">Inicio</a>
+                        </div>
+                        <div class="col">
+                            <a href="#quienesSomos">Quienes Somos</a>
+                        </div>
+                        <div class="col">
+                            <a href="#destacados">Destacados</a>
+                        </div>
+                        <div class="col">
+                            <a href="#form">Contacto</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
 
     <!-- CARRUSEL -->
@@ -76,53 +84,64 @@
     <main>
         <!-- CARDS QUIENES SOMOS -->
         <section>
-            <div class="row gx-5 p-5 text-center">
-                <div class="col-12 p-5">
+            <div class="row gx-5 p-5 text-center d-none d-sm-block" id="quienesSomos">
+                <div class="col-12 p-5 ">
                     <h2>¿QUIÉNES SOMOS?</h2>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;">
-                        <div>
-                            <i class="fa-solid fa-plane card-img-top" alt="icon1"></i>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-                                numquam saepe est voluptates ratione ex in temporibus. Id nemo quaerat ullam possimus,
-                                rerum, error, hic laborum cum consectetur dolorem ipsa?. Lorem ipsum dolor sit, amet
-                                consectetur adipisicing elit. Nobis illum ipsa ut quam dolor, ullam earum. Possimus quis
-                                incidunt et porro accusantium dolor dignissimos, eius earum? Neque debitis ipsum
-                                mollitia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dicta
-                                eaque, nisi cum quis similique sequi at perferendis nobis, deleniti vel quisquam tempore
-                                impedit totam vitae possimus rem est laudantium? Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Repellat corrupti provident eveniet iste, hic cupiditate amet nesciunt
-                                reiciendis, eos velit iusto vitae dicta consequuntur repudiandae quia non. Adipisci,
-                                veniam distinctio.</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-mountain card-img-top" alt="icon2"></i>
+                <div class="row">
+                    <div class="col-sm-4 ">
+                        <div class="card" style="width: 25rem;">
+                            <div>
+                                <i class="fa-solid fa-plane card-img-top" alt="icon1"></i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+                                    numquam saepe est voluptates ratione ex in temporibus. Id nemo quaerat ullam
+                                    possimus,
+                                    rerum, error, hic laborum cum consectetur dolorem ipsa?. Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Nobis illum ipsa ut quam dolor, ullam earum. Possimus
+                                    quis
+                                    incidunt et porro accusantium dolor dignissimos, eius earum? Neque debitis ipsum
+                                    mollitia.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;">
-                        <div>
-                            <i class="fa-solid fa-route card-img-top" alt="icon3"></i>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+                                    dicta
+                                    eaque, nisi cum quis similique sequi at perferendis nobis, deleniti vel quisquam
+                                    tempore
+                                    impedit totam vitae possimus rem est laudantium? Lorem ipsum dolor sit amet
+                                    consectetur,
+                                    adipisicing elit. Repellat corrupti provident eveniet iste, hic cupiditate amet
+                                    nesciunt
+                                    reiciendis, eos velit iusto vitae dicta consequuntur repudiandae quia non. Adipisci,
+                                    veniam distinctio.</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-mountain card-img-top" alt="icon2"></i>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
-                                architecto possimus molestias atque minus, dolores nisi dignissimos dolorem accusamus,
-                                distinctio ea deleniti consectetur eligendi voluptates autem? Odit dolore facere ipsa?.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis suscipit hic laborum
-                                asperiores odio libero reprehenderit odit blanditiis modi quam culpa porro quaerat
-                                laudantium dignissimos quis dolor, dolores temporibus omnis!
-                            </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 25rem;">
+                            <div>
+                                <i class="fa-solid fa-route card-img-top" alt="icon3"></i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+                                    architecto possimus molestias atque minus, dolores nisi dignissimos dolorem
+                                    accusamus,
+                                    distinctio ea deleniti consectetur eligendi voluptates autem? Odit dolore facere
+                                    ipsa?.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis suscipit hic
+                                    laborum
+                                    asperiores odio libero reprehenderit odit blanditiis modi quam culpa porro quaerat
+                                    laudantium dignissimos quis dolor, dolores temporibus omnis!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,11 +150,11 @@
 
         <!-- CARDS DESTACADOS -->
         <section>
-            <div class="row gx-5 p-5 text-center">
+            <div class="row gx-5 p-5 text-center " id="destacados">
                 <div class="col-12 p-5">
                     <h2>DESTACADOS</h2>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 ">
                     <div class="card" style="width: 18rem;">
                         <img src="./assets/img/card1.jpg" class="card-img-top" alt="imagen1">
                         <div class="card-body">
@@ -184,7 +203,7 @@
 
         <!-- FORM -->
         <section>
-            <form class="row g-3 p-5">
+            <form class="row g-3 p-5" id="form">
                 <div class="col-12 p-5 text-center">
                     <h2>CONTACTO</h2>
                 </div>
@@ -209,15 +228,15 @@
 
     <!-- FOOTER BOOTSTRAP -->
     <footer>
-        <div class="row">
+        <div class="row p-5">
             <div class="col-12">
                 <h2>VIAJES CHILE</h2>
             </div>
             <div class="col-12">
-                <i class="fa-brands fa-square-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
-                <i class="fa-brands fa-square-facebook"></i>
+                <a href="https://www.github.com"> <i class="fa-brands fa-square-github"></i></a>
+                <a href="https://linkedin.com"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com"> <i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://facebook.com"> <i class="fa-brands fa-square-facebook"></i></a>
             </div>
         </div>
     </footer>
