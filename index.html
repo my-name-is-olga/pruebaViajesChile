@@ -20,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- ESTILO PROPIO -->
-    <link rel="stylesheet" href="./assets/js/index.js" />
+    <script defer src="./assets/js/index.js"></script>
     <title>VIAJES CHILE</title>
 </head>
 
@@ -97,12 +97,11 @@
                             <div class="card-body">
                                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
                                     numquam saepe est voluptates ratione ex in temporibus. Id nemo quaerat ullam
-                                    possimus,
-                                    rerum, error, hic laborum cum consectetur dolorem ipsa?. Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Nobis illum ipsa ut quam dolor, ullam earum. Possimus
-                                    quis
-                                    incidunt et porro accusantium dolor dignissimos, eius earum? Neque debitis ipsum
-                                    mollitia.</p>
+                                    possimus, rerum, error, hic laborum cum consectetur dolorem ipsa?. Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Nobis illum ipsa ut quam dolor, ullam earum.
+                                    Possimus quis incidunt et porro accusantium dolor dignissimos, eius earum? Neque
+                                    debitis
+                                    ipsum mollitia.</p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +219,8 @@
                     <input type="text" class="form-control" id="inputMessage">
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button id="enviar" type="button" class="btn btn-primary" data-toggle="tooltip"
+                        title="Haz click para enviar tu mensaje">Enviar</button>
                 </div>
             </form>
         </section>
@@ -242,4 +242,5 @@
     </footer>
 
 </body>
+
 </html>
