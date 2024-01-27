@@ -4,14 +4,6 @@
   padding: 0;
   margin: 0;
   border: 0;
- }
-
-body {   
-    background-color:#000000;
-  }
-  
-#main{
-background-color: #000000;
 }
 
 /* NAV */
@@ -19,10 +11,10 @@ a.navbar-brand {
   font-family: "Cabin";
   font-weight: 700;
   color: #fff;
-  }
+}
 
-img{
-    width: 2rem;
+img {
+  width: 2rem;
 }
 
 #navbarNavAltMarkup a {
@@ -34,7 +26,11 @@ img{
 
 #navbarNavAltMarkup {
   justify-content: right;
-  }
+}
+
+main {
+  background-color: #000000;
+}
 
 /* QUIENES SOMOS */
 #quienesSomos {
@@ -90,38 +86,44 @@ div.card-body-a {
   color: #fff;
 }
 
+#destacados img {
+  height: 12rem;
+}
+
 /* CONTACTO */
-form{
-    background-color: #000000;
-    color: #fff;
-    font-family: "Cabin";
-    font-weight: 500;
+form {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Cabin";
+  font-weight: 500;
 }
 
-#enviar{
-    background-color: #00e1ff;
-    border-color: #00e1ff;
+#enviar {
+  background-color: #00e1ff;
+  border-color: #00e1ff;
 }
 
-#inputMessage{
+#inputMessage {
   height: 10rem;
 }
 
 /* FOOTER */
-#socialNetworks{
-    background-color: #00e1ff;
-    color:#fff
+#socialNetworks {
+  font-family: "Cabin";
+  font-weight: 500;
+  background-color: #00e1ff;
+  color: #fff;
 }
 
-#socialNetworks i{
-    font-size: 2rem;
-    
+#socialNetworks i {
+  font-size: 2rem;
 }
 
 #socialNetworks a {
-    text-decoration: none;
+  text-decoration: none;
+  justify-content: space-between;
 }
 
-footer a{
-    color:white;
- }
+footer a {
+  color: white;
+}

@@ -24,13 +24,13 @@
     <title>VIAJES CHILE</title>
 </head>
 
-<body> <!-- data-bs-spy="scroll" data-bs-target="#navbar-example" -->
+<body>
 
     <!-- NAV BOOTSTRAP -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-success p-2 text-dark bg-opacity-25">
         <div class="container-fluid">
-            <img src="./assets/img/viajes.svg" />
-            <a class="navbar-brand">Viajes Chile</a>
+            <a href="#carouselExample"><img src="./assets/img/viajes.svg" /></a>
+            <a href="#carouselExample" class="navbar-brand">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -83,7 +83,7 @@
         </div>
     </header>
 
-    <main style="background-color: black;"> <!-- REVISAR ESTO!!!! -->
+    <main>
         <!-- CARDS QUIENES SOMOS -->
         <section class="container">
             <div class="row text-center d-none d-sm-block" id="quienesSomos">
@@ -238,18 +238,20 @@
 
     <!-- FOOTER -->
     <footer>
-        <section id="socialNetworks" class=" d-md-flex justify-content-center align-items-center pt-3 pb-3 gap-3">
-            <a href="#carouselExample">
+        <section id="socialNetworks" class="d-flex justify-content-around pt-3 pb-3">
+            <a href="#carouselExample" data-toggle="tooltip" title="Subir">
                 <h2>VIAJES CHILE</h2>
             </a>
-            <a href="https://www.github.com"> <i class="fa-brands fa-square-github" data-toggle="tooltip"
-                    title="Ir a GitHub"></i></a>
-            <a href="https://linkedin.com"> <i class="fa-brands fa-linkedin" data-toggle="tooltip"
-                    title="Ir a LinkedIn"></i></a>
-            <a href="https://twitter.com"> <i class="fa-brands fa-square-x-twitter" data-toggle="tooltip"
-                    title="Ir a X"></i></a>
-            <a href="https://facebook.com"> <i class="fa-brands fa-square-facebook" data-toggle="tooltip"
-                    title="Ir a Facebook"></i></a>
+            <div class="d-flex justify-content-around pt-3 pb-3 gap-3">
+                <a href="https://www.github.com"><i class="fa-brands fa-square-github" data-toggle="tooltip"
+                        title="Ir a GitHub"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin" data-toggle="tooltip"
+                        title="Ir a LinkedIn"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-square-x-twitter" data-toggle="tooltip"
+                        title="Ir a X"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook" data-toggle="tooltip"
+                        title="Ir a Facebook"></i></a>
+            </div>
         </section>
     </footer>
 </body>
